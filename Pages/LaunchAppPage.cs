@@ -41,14 +41,15 @@ namespace SpecFlowXamarinUITest.Pages
 
         public void AddTextIn()
         {
-            app.Screenshot("After click ok");
             app.Query(AddText);
+            app.Screenshot("Entered text");
         }
 
         public void WaitForSec()
         {
             Thread.Sleep(5000);
-            app.Screenshot("Entered text");
+            app.Screenshot("After click ok");
+            
         }
 
     }
