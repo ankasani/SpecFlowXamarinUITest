@@ -32,8 +32,9 @@ namespace SpecFlowXamarinUITest.Pages
                 AddText = x => x.WebView().InvokeJS("document.getElementById('firstname').value = 'Anvesh'");             }
         }
 
-        public void ClickOk()
+        public void ClickOk(string testParam)
         {
+            Console.WriteLine(testParam);
             app.WaitForElement(OkButton);
             app.Screenshot("App Launch");
             app.Tap(OkButton);

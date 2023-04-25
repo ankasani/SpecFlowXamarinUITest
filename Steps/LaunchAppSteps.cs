@@ -8,16 +8,16 @@ namespace SpecFlowXamarinUITest.Steps
     {
         Pages.LaunchAppPage lap = new Pages.LaunchAppPage();
 
-        [Given(@"Click On Ok Button")]
-        public void GivenClickOnOkButton()
+        [Given(@"Click On Ok Button '([^']*)'")]
+        public void GivenClickOnOkButton(string testParam)
         {
-            lap.ClickOk();
+            lap.ClickOk(testParam);
         }
-        
-        [Given(@"Again Click On Ok Button")]
-        public void GivenAgainClickOnOkButton()
+
+        [Given(@"Again Click On Ok Button '([^']*)'")]
+        public void GivenAgainClickOnOkButton(string testParam)
         {
-            lap.ClickOk();
+            lap.ClickOk(testParam);
         }
         
         [When(@"Two Click Are Done")]
